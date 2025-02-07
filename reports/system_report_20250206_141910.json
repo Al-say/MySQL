@@ -1,0 +1,27 @@
+{
+  "timestamp": "2025-02-06T14:19:10.231189",
+  "database_stats": {
+    "questions_count": 1,
+    "answers_count": 0
+  },
+  "system_stats": {
+    "api_calls": {
+      "total": 0,
+      "success_rate": 0.0,
+      "average_response_time": 0.0
+    }
+  },
+  "performance_stats": {
+    "database_performance": {
+      "Questions": "12206",
+      "Slow_queries": "5",
+      "Threads_connected": "1",
+      "Threads_running": "2"
+    },
+    "system_resources": {
+      "cpu_percent": 21.7,
+      "memory_percent": 86.4,
+      "disk_usage_percent": 19.9
+    }
+  }
+}

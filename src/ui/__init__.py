@@ -1,0 +1,1 @@
+"""UI package for MySQL practice system.""" 

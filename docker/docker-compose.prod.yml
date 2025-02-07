@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    restart: always
+    environment:
+      - DEBUG=False
+      - DB_HOST=db
+    depends_on:
+      - db
+    networks:
+      - app_network
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
+      - MYSQL_DATABASE=mysql_exercise_db
+      - MYSQL_USER=mysql_practice
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ../database/setup.sql:/docker-entrypoint-initdb.d/setup.sql
+      - ../database/privileges.sql:/docker-entrypoint-initdb.d/privileges.sql
+      - ../database/ssl:/etc/mysql/ssl/
+    command: --ssl-ca=/etc/mysql/ssl/ca.pem 
+             --ssl-cert=/etc/mysql/ssl/server-cert.pem 
+             --ssl-key=/etc/mysql/ssl/server-key.pem
+    networks:
+      - app_network
+
+  backup:
+    image: alpine
+    volumes:
+      - mysql_backup:/backup
+      - ../database/backup.sh:/backup.sh
+    environment:
+      - DB_USER=mysql_practice
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=mysql_exercise_db
+      - BACKUP_DIR=/backup
+    command: sh -c "chmod +x /backup.sh && /backup.sh"
+    depends_on:
+      - db
+    networks:
+      - app_network
+
+volumes:
+  mysql_data:
+  mysql_backup:
+
+networks:
+  app_network:
+    driver: bridge 

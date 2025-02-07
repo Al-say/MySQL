@@ -1,0 +1,10 @@
+[client]
+ssl-ca=/path/to/ca.pem
+ssl-cert=/path/to/client-cert.pem
+ssl-key=/path/to/client-key.pem
+
+[mysqld]
+ssl-ca=/path/to/ca.pem
+ssl-cert=/path/to/server-cert.pem
+ssl-key=/path/to/server-key.pem
+require_secure_transport=ON 

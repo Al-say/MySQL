@@ -1,0 +1,1 @@
+"""Database package for MySQL practice system.""" 
