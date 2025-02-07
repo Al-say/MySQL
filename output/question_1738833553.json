@@ -1,0 +1,9 @@
+```json
+{
+    "question": "Which of the following SQL commands is used to retrieve data from a MySQL database?",
+    "options": ["SELECT", "INSERT", "UPDATE", "DELETE"],
+    "correct_answer": "A",
+    "explanation": "The SELECT statement is used to retrieve data from a database. It allows you to specify the columns you want to retrieve and the table from which to retrieve them. The other options are used for different purposes: INSERT is used to add new records, UPDATE is used to modify existing records, and DELETE is used to remove records.",
+    "difficulty": "beginner"
+}
+```

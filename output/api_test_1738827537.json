@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-02-06T15:38:57.076473",
+  "general_test": {
+    "prompt": "你好，这是一个测试消息。请用一句话回复。",
+    "response": "你好，测试消息已收到。"
+  },
+  "mysql_test": {
+    "prompt": "请用一句话描述MySQL的SELECT语句的基本用法。",
+    "response": "SELECT语句用于从MySQL数据库中检索数据，基本语法为`SELECT 列名 FROM 表名 WHERE 条件`。"
+  }
+}

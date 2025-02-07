@@ -1,31 +1,10 @@
-# 环境变量文件
-.env
-.env.*
-
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
 
 # Virtual Environment
+.venv/
 venv/
 ENV/
 
@@ -35,24 +14,23 @@ ENV/
 *.swp
 *.swo
 
-# Project specific
-logs/
+# Logs
 *.log
-.coverage
-htmlcov/
+
+# Cache
+__pycache__/
 .pytest_cache/
 cache/
-backups/
 
-# Database
-*.sqlite3
-*.db
+# Environment variables
+.env
 
-# Temp files
+# Temporary files
 *.tmp
 *.bak
-*.swp
 *~
 
-# 缓存目录
-output/ 
+# Build and dist
+build/
+dist/
+*.egg-info/ 

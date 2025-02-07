@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-02-06T18:08:01.370365",
+  "general_test": {
+    "prompt": "Hello, this is a test message. Please reply with one sentence.",
+    "response": "Hello! This is a brief reply to your test message."
+  },
+  "mysql_test": {
+    "prompt": "Please describe the basic usage of MySQL SELECT statement in one sentence.",
+    "response": "The MySQL `SELECT` statement retrieves data from one or more tables, using syntax like `SELECT column1, column2 FROM table_name WHERE condition;`."
+  },
+  "ui_test": {
+    "prompt": "Please describe what responsive design is in one sentence.",
+    "response": "Responsive design is an approach to web design that ensures a website adapts seamlessly to different screen sizes and devices, providing an optimal viewing experience."
+  }
+}

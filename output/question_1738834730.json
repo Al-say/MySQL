@@ -1,0 +1,14 @@
+```json
+{
+    "question": "Which of the following SQL statements is used to retrieve all columns from a table named 'employees'?",
+    "options": [
+        "A. SELECT * FROM employees;",
+        "B. SELECT ALL FROM employees;",
+        "C. SELECT COLUMNS FROM employees;",
+        "D. SELECT TABLE employees;"
+    ],
+    "correct_answer": "A",
+    "explanation": "The correct SQL statement to retrieve all columns from a table is 'SELECT * FROM employees;'. The asterisk (*) is a wildcard that represents all columns in the table. Option B, C, and D are incorrect because they do not follow the correct SQL syntax for retrieving data from a table.",
+    "difficulty": "beginner"
+}
+```

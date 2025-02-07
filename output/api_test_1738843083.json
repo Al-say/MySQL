@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-02-06T19:58:03.141350",
+  "general_test": {
+    "prompt": "Hello, this is a test message. Please reply with one sentence.",
+    "response": "Hello! This is a brief reply to your test message."
+  },
+  "mysql_test": {
+    "prompt": "Please describe the basic usage of MySQL SELECT statement in one sentence.",
+    "response": "The `SELECT` statement in MySQL is used to retrieve data from one or more tables, with optional clauses like `WHERE`, `ORDER BY`, `GROUP BY`, and `LIMIT` to filter, sort, and limit the results."
+  },
+  "ui_test": {
+    "prompt": "Please describe what responsive design is in one sentence.",
+    "response": "Responsive design is an approach to web design that ensures a website's layout and content adapt seamlessly to different screen sizes and devices, providing an optimal viewing experience."
+  }
+}
